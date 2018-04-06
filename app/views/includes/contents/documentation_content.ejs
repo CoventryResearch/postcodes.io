@@ -329,6 +329,10 @@
     <p><code>wideSearch=</code> (not required) Search up to 20km radius, but subject to a maximum of 10 results</p>
     <h3 id="Postcode-Query">Postcode Query</h3>
     <p>Submit a postcode query and receive a complete list of postcode matches and all associated postcode data.</p><pre><h4><div class="http-method">GET</div>https://api.postcodes.io/postcodes?q=[query]</h4></pre>
+    <p>Essentially a postcode search which prefix matches and returns postcodes in sorted order (case insensitive).</p>
+    <p>This is space sensitive - it detects for spaces between outward and inward parts of the postcode (some examples<a href="https://github.com/ideal-postcodes/postcodes.io/issues/44"> here</a>).</p>
+    <p>The result set can either be empty or populated with up to 100 postcode entities. Either way, it will always return a 200 response code.</p>
+    <br />
     <h4>Optional Query Parameters</h4>
     <p><code>query=</code> (not required) aliases to<code>q=</code></p>
     <p><code>limit=</code> (not required) Limits number of postcodes matches to return. Defaults to 10. Needs to be less than 100.</p>
