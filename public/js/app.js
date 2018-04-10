@@ -226,4 +226,13 @@ $( document ).ready(function() {
 			displayJsonResult($result, error.responseJSON);
 		});
 	});
+
+	if($("body", "html").scrollTop() > 0) {
+		
+	}
+
+	$(window).scroll(function() {
+
+		
+	});
 });
