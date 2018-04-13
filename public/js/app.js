@@ -227,12 +227,12 @@ $( document ).ready(function() {
 		});
 	});
 
-	if($("body", "html").scrollTop() > 0) {
+	// if($("body", "html").scrollTop() > 0) {
 		
-	}
+	// }
 
-	$(window).scroll(function() {
+	// $(window).scroll(function() {
 
 		
-	});
+	// });
 });
