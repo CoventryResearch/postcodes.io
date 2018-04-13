@@ -228,11 +228,26 @@ $( document ).ready(function() {
 	});
 
 	// if($("body", "html").scrollTop() > 0) {
-		
 	// }
-
 	// $(window).scroll(function() {
-
-		
 	// });
+
+	let offset = 250;
+	let duration = 300;
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > offset) {
+			$('.arrow-up').fadeIn(duration);
+		} else {
+			$('.arrow-up').fadeOut(duration);
+		}
+	});
+
+	$('.arrow-up').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop: 0}, duration);
+		return false;
+	})
+
+
 });
