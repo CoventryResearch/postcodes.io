@@ -366,7 +366,7 @@ li.active a {
 }
 
 .arrow-up {
-  border: solid #080F1F;
+  border: solid #28502e;
   border-width: 0 3px 3px 0;
   display: none;
   height: 1em;
@@ -376,14 +376,14 @@ li.active a {
   right: 8%;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
-  -webkit-animation: toTop ease-in-out 1s 3 alternate;
-  -moz-animation: toTop ease-in-out 1s 3 alternate;
-  animation: toTop ease-in-out 1s 3 alternate;
+  -webkit-animation: toTop ease-in-out 1s 1 alternate;
+  -moz-animation: toTop ease-in-out 1s 1 alternate;
+  animation: toTop ease-in-out 1s 1 alternate;
   z-index: 100;
 }
 
 .arrow-up::after {
-  border: solid #080F1F;
+  border: solid #28502e;
   border-width: 0 3px 3px 0;
   content: "";
   display: block;
@@ -398,11 +398,17 @@ li.active a {
   from {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+    -moz-transform: translateY(0.5em) rotate(-135deg);
+    -webkit-transform: translateY(0.5em) rotate(-135deg);
+    transform: translateY(0.5em) rotate(-135deg);
+  }
   to {
     opacity: 1;
-    -moz-transform: translateY(1em) rotate(-135deg);
-    -webkit-transform: translateY(1em) rotate(-135deg);
-    transform: translateY(1em) rotate(-135deg);
+    -moz-transform: translateY(0em) rotate(-135deg);
+    -webkit-transform: translateY(0em) rotate(-135deg);
+    transform: translateY(0em) rotate(-135deg);
   }
 }
 
@@ -410,11 +416,17 @@ li.active a {
   from {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+    -moz-transform: translateY(0.5em) rotate(-135deg);
+    -webkit-transform: translateY(0.5em) rotate(-135deg);
+    transform: translateY(0.5em) rotate(-135deg);
+  }
   to {
     opacity: 1;
-    -moz-transform: translateY(1em) rotate(-135deg);
-    -webkit-transform: translateY(1em) rotate(-135deg);
-    transform: translateY(1em) rotate(-135deg);
+    -moz-transform: translateY(0em) rotate(-135deg);
+    -webkit-transform: translateY(0em) rotate(-135deg);
+    transform: translateY(0em) rotate(-135deg);
   }
 }
 
@@ -422,10 +434,16 @@ li.active a {
   from {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+    -moz-transform: translateY(0.5em) rotate(-135deg);
+    -webkit-transform: translateY(0.5em) rotate(-135deg);
+    transform: translateY(0.5em) rotate(-135deg);
+  }
   to {
     opacity: 1;
-    -moz-transform: translateY(1em) rotate(-135deg);
-    -webkit-transform: translateY(1em) rotate(-135deg);
-    transform: translateY(1em) rotate(-135deg);
+    -moz-transform: translateY(0em) rotate(-135deg);
+    -webkit-transform: translateY(0em) rotate(-135deg);
+    transform: translateY(0em) rotate(-135deg);
   }
 }
